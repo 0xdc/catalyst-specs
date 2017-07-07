@@ -12,8 +12,10 @@ stage4/use:
 	ipv6
 
 stage4/packages:
+	app-admin/ansible
 	app-editors/vim
 	app-shells/bash-completion
+	dev-vcs/git
 	sys-apps/iproute2
 	sys-auth/nss-pam-ldapd
 	sys-auth/pam_krb5
