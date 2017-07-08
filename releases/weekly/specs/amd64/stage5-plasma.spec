@@ -15,7 +15,6 @@ stage4/packages:
 	kde-plasma/plasma-meta
 	kde-apps/dolphin
 	kde-apps/konsole
-	x11-base/xorg-server
 
 stage4/root_overlay: @REPO_DIR@/releases/weekly/overlays/plasma
 
