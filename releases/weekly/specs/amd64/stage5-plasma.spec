@@ -1,10 +1,10 @@
 subarch: amd64
 target: stage4
-version_stamp: systemd-@latest@
-rel_type: systemd
-profile: default/linux/amd64/13.0/systemd
+version_stamp: plasma-@latest@
+rel_type: plasma
+profile: default/linux/amd64/13.0/desktop/plasma/systemd
 snapshot: @latest@
-source_subpath: systemd/stage3-amd64-systemd-latest
+source_subpath: systemd/stage4-amd64-systemd-latest
 portage_confdir: @REPO_DIR@/releases/weekly/portage/sso
 
 stage4/use:
@@ -12,18 +12,11 @@ stage4/use:
 	ipv6
 
 stage4/packages:
-	app-admin/ansible
-	app-editors/vim
-	app-shells/bash-completion
-	dev-vcs/git
-	sys-apps/iproute2
-	sys-auth/nss-pam-ldapd
-	sys-auth/pam_krb5
+	kde-plasma/plasma-meta
+	kde-apps/dolphin
+	kde-apps/konsole
 
-stage4/root_overlay: @REPO_DIR@/releases/weekly/overlays/sso
-
-stage4/unmerge:
-	app-editors/nano
+stage4/root_overlay: @REPO_DIR@/releases/weekly/overlays/plasma
 
 stage4/empty:
 	/root/.ccache
